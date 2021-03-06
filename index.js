@@ -72,7 +72,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:5.1\n' 
             + 'FN:KS\n' // Nama kamu
             + 'ORG:KSBOT;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5569984423608:+55 6998442-3608\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=556984423608:+55 698442-3608\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 const ngonsol = JSON.parse(fs.readFileSync('./settings/Miku.json'))
 const {
@@ -327,11 +327,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5569984423608@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5569984423608@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5569984423608@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["5569984423608@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5569984423608@s.whatsapp.net"]
+			const ownerNumber = ["556984423608@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"556984423608@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["556984423608@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["556984423608@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["556984423608@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
